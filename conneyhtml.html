@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💕 Valentine's Day Special for you Conney💕</title>
+    <link rel="stylesheet" href="conneycss.css">
+</head>
+<body>
+    <div class="hearts-background" id="heartsBackground"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1>💕 Valentine's Day Special for you Pookie💕</h1>
+            <p>Answer these questions and find out something special...</p>
+        </div>
+
+        <div class="question-container active" id="q1">
+            <div class="progress">Question 1 of 4</div>
+            <div class="question">
+                <h2>What's your favorite thing about our relationship?</h2>
+                <div class="options">
+                    <div class="option" onclick="answer(1, 'talks', 'https://media1.tenor.com/m/osKRJMpIu8IAAAAd/ysb.gif')">Our deep conversations</div>
+                    <div class="option" onclick="answer(1, 'laughs', 'https://media.tenor.com/1W-HKNvj8UoAAAAM/cat.gif')">The way we make each other laugh</div>
+                    <div class="option" onclick="answer(1, 'support', 'https://media1.tenor.com/m/g47qIp9xEzsAAAAd/cool-fun.gif')">How we support each other</div>
+                    <div class="option" onclick="answer(1, 'everything', 'https://media1.tenor.com/m/xR12rhjf4k4AAAAd/cat-meme.gif')">Everything about it</div>
+                </div>
+            </div>
+            <div class="reaction" id="reaction1">
+                <div class="reaction-image" id="reactionImage1"></div>
+                <div class="reaction-text" id="reactionText1"></div>
+            </div>
+            <button class="next-btn" id="nextBtn1" onclick="nextQuestion(2)">Next Question →</button>
+        </div>
+
+        <div class="question-container" id="q2">
+            <div class="progress">Question 2 of 4</div>
+            <div class="question">
+                <h2>If you could teleport right now, where would we go?</h2>
+                <div class="options">
+                    <div class="option" onclick="answer(2, 'beach', 'https://media1.tenor.com/m/MFJeOVyg2_8AAAAd/cat-cat-sea.gif')">A romantic beach at sunset</div>
+                    <div class="option" onclick="answer(2, 'mountains', 'https://media1.tenor.com/m/EqLvwzRAakIAAAAC/peak-peak-gameplay.gif')">Beautiful mountains for hiking</div>
+                    <div class="option" onclick="answer(2, 'city', 'https://media1.tenor.com/m/fFMQeQTScigAAAAd/cat-window.gif')">A cozy city for exploring</div>
+                    <div class="option" onclick="answer(2, 'home', 'https://media1.tenor.com/m/DyhDLNFZHCQAAAAd/friendship-friends.gif')">Anywhere, as long as we're together</div>
+                </div>
+            </div>
+            <div class="reaction" id="reaction2">
+                <div class="reaction-image" id="reactionImage2"></div>
+                <div class="reaction-text" id="reactionText2"></div>
+            </div>
+            <button class="next-btn" id="nextBtn2" onclick="nextQuestion(3)">Next Question →</button>
+        </div>
+
+        <div class="question-container" id="q3">
+            <div class="progress">Question 3 of 4</div>
+            <div class="question">
+                <h2>What's our perfect date night?</h2>
+                <div class="options">
+                    <div class="option" onclick="answer(3, 'movie', 'https://media1.tenor.com/m/ftZCB0jFR0YAAAAC/laptop-watching.gif')">Movie marathon with snacks</div>
+                    <div class="option" onclick="answer(3, 'dinner', 'https://media.tenor.com/wdju4YmRuv8AAAAi/tkthao219-peach.gif')">Fancy dinner and dessert</div>
+                    <div class="option" onclick="answer(3, 'games', 'https://media1.tenor.com/m/flb1rMu3WroAAAAC/mochi.gif')">Playing games together</div>
+                    <div class="option" onclick="answer(3, 'stargazing', 'https://media1.tenor.com/m/RLglLuldgvoAAAAC/love-star-gazing.gif')">Stargazing and deep talks</div>
+                </div>
+            </div>
+            <div class="reaction" id="reaction3">
+                <div class="reaction-image" id="reactionImage3"></div>
+                <div class="reaction-text" id="reactionText3"></div>
+            </div>
+            <button class="next-btn" id="nextBtn3" onclick="nextQuestion(4)">Next Question →</button>
+        </div>
+
+        <div class="question-container" id="q4">
+            <div class="progress">The Big Question! 💝</div>
+            <div class="question final-question">
+                <h2>Will you be my Valentine? 💕</h2>
+                <div class="final-options">
+                    <div class="final-option yes-btn" onclick="finalAnswer('yes')">YES! 💖</div>
+                    <div class="final-option no-btn" onclick="finalAnswer('no')">No 💔</div>
+                </div>
+            </div>
+            <div class="final-reaction" id="finalReaction">
+                <div class="final-reaction-image" id="finalReactionImage"></div>
+                <div class="final-reaction-text" id="finalReactionText"></div>
+                <div class="final-message" id="finalMessage"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="conneyjs.js"></script>
+</body>
+</html>
